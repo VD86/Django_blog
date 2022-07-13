@@ -1,4 +1,4 @@
-1)🗿 About:
+1) 🗿 About:
   *My first blog
 
 2) 🗿 How to RUN in:
