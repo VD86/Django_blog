@@ -29,5 +29,19 @@ class SearchResultsView(ListView):
 class NeedUpdateView(UpdateView):
     model = Post
     template_name = 'edit.html'
-    fields = 'title', 'text'
+    fields = 'image', 'title', 'desc'
     success_url = '/'
+
+
+class PostDeleteView(DeleteView):
+    model = Post
+    success_url = '/'
+    template_name = 'delete.html'
+
+
+class PostCreateView(CreateView):
+    model = Post
+    fields = ['image', 'desc', 'title']
+    template_name = 'create.html'
+    success_url = '/'
+
